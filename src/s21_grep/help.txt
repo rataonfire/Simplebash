@@ -1,0 +1,44 @@
+Usage: grep [OPTIONS] PATTERN [FILE...]
+
+Search for PATTERN in each FILE. Results are printed to standard output.
+If no FILE is given, reads from standard input.
+
+OPTIONS
+
+  -e PATTERN, --regexp=PATTERN
+      Use PATTERN as the regular expression. Useful when the pattern starts
+      with a dash, or to specify multiple patterns in a single invocation.
+      Example: grep -e "foo" -e "bar" file.txt
+
+  -i, --ignore-case
+      Match case-insensitively. "Hello", "hello", and "HELLO" all match.
+
+  -v, --invert-match
+      Print only lines that do NOT match the pattern.
+
+  -c, --count
+      Print only the count of matching lines per file, not the lines
+      themselves.
+
+  -l, --files-with-matches
+      Print only the names of files that contain at least one match.
+      Suppresses normal line output.
+
+  -n, --line-number
+      Prefix each matching line with its 1-based line number within its
+      input file.
+
+  -h, --no-filename
+      Suppress the filename prefix on output when searching multiple files.
+
+  -s, --no-messages
+      Silence error messages about files that do not exist or cannot be
+      read.
+
+  -f FILE, --file=FILE
+      Read one pattern per line from FILE instead of specifying the pattern
+      on the command line. Can be combined with -e.
+
+  -o, --only-matching
+      Print only the matched substring of each line, not the whole line.
+      Each match is printed on its own line.

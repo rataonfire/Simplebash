@@ -1,0 +1,14 @@
+
+.git
+.gitignore
+.github
+.vscode
+.idea
+*.o
+*.obj
+*.dSYM
+src/cat/s21_cat
+src/grep/s21_grep
+tests/tmp_*
+*.log
+.DS_Store
